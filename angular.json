@@ -31,7 +31,7 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js"
 
-              /*************DEBUG *********************************************
+              /*************DEBUG *
               "./node_modules/bootsrap/dist/js/bootstrap.min.js" */
             ]
           },
