@@ -15,6 +15,7 @@ export class ProductService {
 AllProducts=new BehaviorSubject<productModel[]>(null!);
   constructor(private http:HttpClient)
   {
+    this.getFromDb("");
 
   }
   private baseUrl = "http://localhost:8000/api/";

@@ -1,1 +1,92 @@
-<p>products works!</p>
+<div style="padding:2%;">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+          <h3 class="card-title" _msttexthash="437515" _msthash="129">Beérkezett üzenetek</h3>
+
+          <div class="card-tools">
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Keresés a levelekben" _mstplaceholder="148213" _msthash="130">
+              <div class="input-group-append">
+                <div class="btn btn-primary">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.card-tools -->
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body p-0">
+          <div class="mailbox-controls">
+            <!-- Check all button -->
+            <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
+            </button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm"><i class="far fa-trash-alt"></i></button>
+              <button type="button" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></button>
+              <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i></button>
+            </div>
+            <!-- /.btn-group -->
+            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-sync-alt"></i></button>
+            <div class="float-right"><font _mstmutation="1" _msttexthash="52949" _msthash="131">
+              1-50/200
+              </font><div class="btn-group">
+                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-right"></i></button>
+              </div>
+              <!-- /.btn-group -->
+            </div>
+            <!-- /.float-right -->
+          </div>
+          <div class="table-responsive mailbox-messages">
+            <table class="table table-hover table-striped">
+              <tbody>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            
+                <tr *ngFor= 'let p of products'>
+                    <td><img src="{{p.imgpath}}" style= "width: 50px; height: 50px;"></td>
+                    <td>{{p.name}}</td>
+                    <td>{{p.category}}</td>
+                    <td>{{p.brand}}</td>
+                    <td>{{p.price}}</td>
+                    <td>{{p.description |slice:0:20}}</td>
+                </tr>
+                    </tbody>
+                </table>
+            <!-- /.table -->
+          </div>
+          <!-- /.mail-box-messages -->
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer p-0">
+          <div class="mailbox-controls">
+            <!-- Check all button -->
+            <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
+            </button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm"><i class="far fa-trash-alt"></i></button>
+              <button type="button" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></button>
+              <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i></button>
+            </div>
+            <!-- /.btn-group -->
+            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-sync-alt"></i></button>
+            <div class="float-right"><font _mstmutation="1" _msttexthash="52949" _msthash="177">
+              1-50/200
+              </font><div class="btn-group">
+                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-right"></i></button>
+              </div>
+              <!-- /.btn-group -->
+            </div>
+            <!-- /.float-right -->
+          </div>
+        </div>
+      </div>
+</div>
