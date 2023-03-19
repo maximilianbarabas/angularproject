@@ -24,4 +24,11 @@ console.log(this.products);
 
   }
 
+  search(input: any)
+  {
+    this.proser.getFromDb(input);
+
+
+  }
+
 }
